@@ -1,0 +1,19 @@
+<h1>GET Request Received</h1>
+
+{{#if getList.length}}
+	<h2>GET Contents</h2>
+
+	<table>
+		<tr>
+			<th>Parameter Name</th>
+			<th>Parameter Value</th>
+		</tr>
+
+		{{#each getList}}
+			<tr>
+				<td>{{this.name}}</td>
+				<td>{{this.value}}</td>
+			</tr>
+		{{/each}}
+	</table>
+{{/if}}

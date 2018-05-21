@@ -1,0 +1,37 @@
+<h1>POST Request Received</h1>
+
+{{#if postQList.length}}
+	<h2>POST Contents Query</h2>
+
+	<table>
+		<tr>
+			<th>Parameter Name</th>
+			<th>Parameter Value</th>
+		</tr>
+
+		{{#each postQList}}
+			<tr>
+				<td>{{this.name}}</td>
+				<td>{{this.value}}</td>
+			</tr>
+		{{/each}}
+	</table>
+{{/if}}
+
+{{#if postBList.length}}
+	<h2>POST Contents Sent</h2>
+
+	<table>
+		<tr>
+			<th>Parameter Name</th>
+			<th>Parameter Value</th>
+		</tr>
+
+		{{#each postBList}}
+			<tr>
+				<td>{{this.name}}</td>
+				<td>{{this.value}}</td>
+			</tr>
+		{{/each}}
+	</table>
+{{/if}}
