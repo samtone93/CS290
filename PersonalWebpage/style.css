@@ -1,0 +1,200 @@
+* {
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	height: 100%;
+}
+
+/* Style the top navigation bar */
+.nav {
+	overflow: hidden;
+	background-color: #045FB4;
+}
+
+/* Style the topnav links */
+.nav a {
+	float: left;
+	display: block;
+	color: #F2F2F2;
+	text-align: center;
+	padding: 15px;
+	text-decoration: none;
+}
+
+/* Change color on hover */
+.nav a:hover {
+	background-color: #CEE3F6;
+	color: #045FB4;
+}
+
+/* Style the content */
+.content {
+	background-color: #CEE3F6;
+	color: #045FB4;
+	padding: 15px;
+}
+
+/* Style the footer */ 
+.footer {
+	background-color: #EFF5FB;
+	padding: 10px;
+	text-align: center;
+	color: #045FB4;
+}
+
+/* Style social media bar */
+footer.socialLinks {
+	display: block;
+}
+
+/* Style social media icons */
+img.socialIcon {
+	width: 50px;
+	height: 50px;
+	color: #CEE3F6;
+	filter: opacity(10%);
+}
+
+/* Darken icon being hovered */
+img.socialIcon:hover {
+	filter: opacity(100%);
+}
+
+/* Box that holds the slides */
+.container {
+	position: relative;
+	margin: auto;
+	width: 100%;
+}
+
+/* Since we use JS, it's okay to hide the images by default */
+.slides {
+	display: none;
+}
+
+/* Setting up buttons to be used for scrolling images */
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 45%;
+	width: auto;
+	padding: 15px;
+	margin-top: -25px;
+	color: white;
+	font-weight: bold;
+	font-size: 24px;
+	background-color: #CEE3F6;
+}
+
+/* Puts the next on the right side */
+.next {
+	right: 0;
+}
+
+/* Darken background-color when hovering the arrows */
+.prev:hover, .next:hover {
+	background-color: #045FB4;
+}
+
+/* Caption container coding */
+.caption {
+	background-color: #CEE3F6;
+	color: #045FB4;
+	filter: opacity(75%);
+	font-size: 12px;
+	font-weight: bold;
+	padding: 10px 10px;
+	position: absolute;
+	bottom: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #EFF5FB;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dotactive, .dot:hover {
+  background-color: #045FB4;
+}
+
+.resumeScroll {
+	height: 300px;
+	width: 100%;
+	overflow: scroll;
+}
+
+img.linkIcon {
+	width: 20px;
+	height: 20px;
+}
+
+ul.descript {
+	list-style-type: none;
+}
+
+li.titleLine {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+li.dataLine {
+	font-style: italic;
+}
+
+img.projects {
+	max-height: 300px;
+}
+
+.center {
+	text-align: center;
+}
+
+.content a:link {
+	color: #EFF5FB;
+}
+
+.content a:visited {
+	color: #045FB4;
+}
+
+.content a:hover {
+	color: #045FB4;
+}
+
+.column {
+	float: left;
+	width: 50%;
+	padding: 10px;
+	text-align: center;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+img.contactIcon {
+	width: 250px;
+	height: 250px;
+	color: #CEE3F6;
+	filter: opacity(10%);
+}
+
+img.contactIcon:hover {
+	filter: opacity(100%);
+}
